@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Fragment } from 'react'
-import { loading, addTodos, updateTodos, removeTodos, markDoneTodos, filterTodos } from '../redux/loading/todoActions'
+import { loading, addTodos, updateTodos, removeTodos, markDoneTodos } from '../redux/loading/todoActions'
 import { useDispatch, useSelector } from 'react-redux'
 import Todo from './Todo'
 import TodoForm from './TodoForm'
@@ -9,7 +9,7 @@ function TodoList() {
     const [todos, setTodos] = useState([])
     const { todos: todoData } = useSelector(state => state.isTodos)
     const [countComplete, setcountComplete] = useState(0)
-    const [progress, setprogress] = useState(0)
+    /* const [progress, setprogress] = useState(0) */
     const [filter, setfilter] = useState('all')
 
 

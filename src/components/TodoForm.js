@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 
 function TodoForm(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : '')
-
 
   const handleSubmit = (e) => {
     e.preventDefault()
